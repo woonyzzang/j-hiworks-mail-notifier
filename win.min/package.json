@@ -1,0 +1,83 @@
+{
+    "build": {
+        "productName": "Hiworks Mail Notifier",
+        "appId": "com.electron.hiworks",
+        "asar": false,
+        "protocols": {
+            "name": "Hiworks Mail Notifier",
+            "schemes": [
+                "Hiworks Mail Notifier"
+            ]
+        },
+        "mac": {
+            "target": [
+                "default"
+            ],
+            "icon": "./assets/icons/mac/icon.icns"
+        },
+        "dmg": {
+            "title": "Hiworks Mail Notifier",
+            "icon": "./assets/icons/mac/icon.icns"
+        },
+        "win": {
+            "target": [
+                "zip",
+                "nsis"
+            ],
+            "icon": "./assets/icons/win/icon.ico"
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb",
+                "rpm",
+                "zip",
+                "tar.gz"
+            ],
+            "icon": "./assets/icons/png/icon.png"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true
+        },
+        "directories": {
+            "buildResources": "./",
+            "output": "./build/",
+            "app": "."
+        }
+    },
+    "productName": "Hiworks Mail Notifier",
+    "name": "hiworks-mail-notifier",
+    "version": "1.0.0",
+    "description": "Mail Notifier Application for OS",
+    "main": "main.js",
+    "scripts": {
+        "chromedriver": "./node_modules/.bin/chromedriver --url-base=wd/hub --port=9515",
+        "start": "electron . --disable-gpu",
+        "dev": "phantomjs _phantom.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dist": "build",
+        "build:osx": "build --mac",
+        "build:linux": "npm run build:linux32 && npm run build:linux64",
+        "build:linux32": "build --linux --ia32",
+        "build:linux64": "build --linux --x64",
+        "build:win": "npm run build:win32 && npm run build:win64",
+        "build:win32": "build --win --ia32",
+        "build:win64": "build --win --x64"
+    },
+    "keywords": [
+        "electron",
+        "phantom"
+    ],
+    "author": "JoeSeungWoon",
+    "license": "ISC",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.2",
+        "electron-chromedriver": "^1.8.0",
+        "phantom": "^4.0.12"
+    },
+    "devDependencies": {
+        "electron": "^1.7.12",
+        "electron-builder": "^19.56.0"
+    }
+}

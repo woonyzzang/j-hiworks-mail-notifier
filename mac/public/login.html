@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Login :: Hiworks Mail Notifier</title>
+<style>
+*{margin:0;padding:0}
+:root{font-size:.625em;}
+body,button,h1,h2,h3,h4,h5,input,select,table,textarea{font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif}
+fieldset{border:0}
+body{font-size:1.4rem}
+img{max-width:100%;height:auto}
+.blind{overflow:hidden;clip:rect(0 0 0 0);position:absolute;width:1px;height:1px}
+.dimmed{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000;opacity:.5}
+@-webkit-keyframes sk-circleBounceDelay {
+  0%, 80%, 100%{-webkit-transform:scale(0);transform:scale(0)}
+  40%{-webkit-transform:scale(1);transform:scale(1)}
+}
+@keyframes sk-circleBounceDelay{
+  0%, 80%, 100%{-webkit-transform:scale(0);transform:scale(0)}
+  40%{-webkit-transform:scale(1);transform:scale(1)}
+}
+.sk-circle{position:relative;width:40px;height:40px;margin:100px auto}
+.sk-circle .sk-child{position:absolute;top:0;left:0;width:100%;height:100%}
+.sk-circle .sk-child:before{display:block;content:'';width:15%;height:15%;margin:0 auto;background-color:#fff;border-radius:100%;-webkit-animation:sk-circleBounceDelay 1.2s infinite ease-in-out both;animation:sk-circleBounceDelay 1.2s infinite ease-in-out both}
+.sk-circle .sk-circle2{-webkit-transform:rotate(30deg);-ms-transform:rotate(30deg);transform:rotate(30deg)}
+.sk-circle .sk-circle3{-webkit-transform:rotate(60deg);-ms-transform:rotate(60deg);transform:rotate(60deg)}
+.sk-circle .sk-circle4{-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
+.sk-circle .sk-circle5{-webkit-transform:rotate(120deg);-ms-transform:rotate(120deg);transform:rotate(120deg)}
+.sk-circle .sk-circle6{-webkit-transform:rotate(150deg);-ms-transform:rotate(150deg);transform:rotate(150deg)}
+.sk-circle .sk-circle7{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.sk-circle .sk-circle8{-webkit-transform:rotate(210deg);-ms-transform:rotate(210deg);transform:rotate(210deg)}
+.sk-circle .sk-circle9{-webkit-transform:rotate(240deg);-ms-transform:rotate(240deg);transform:rotate(240deg)}
+.sk-circle .sk-circle10{-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}
+.sk-circle .sk-circle11{-webkit-transform:rotate(300deg);-ms-transform:rotate(300deg);transform:rotate(300deg)}
+.sk-circle .sk-circle12{-webkit-transform:rotate(330deg);-ms-transform:rotate(330deg);transform:rotate(330deg)}
+.sk-circle .sk-circle2:before{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+.sk-circle .sk-circle3:before{-webkit-animation-delay:-1s;animation-delay:-1s}
+.sk-circle .sk-circle4:before{-webkit-animation-delay:-.9s;animation-delay:-.9s}
+.sk-circle .sk-circle5:before{-webkit-animation-delay:-.8s;animation-delay:-.8s}
+.sk-circle .sk-circle6:before{-webkit-animation-delay:-.7s;animation-delay:-.7s}
+.sk-circle .sk-circle7:before{-webkit-animation-delay:-.6s;animation-delay:-.6s}
+.sk-circle .sk-circle8:before{-webkit-animation-delay:-.5s;animation-delay:-.5s}
+.sk-circle .sk-circle9:before{-webkit-animation-delay:-.4s;animation-delay:-.4s}
+.sk-circle .sk-circle10:before{-webkit-animation-delay:-.3s;animation-delay:-.3s}
+.sk-circle .sk-circle11:before{-webkit-animation-delay:-.2s;animation-delay:-.2s}
+.sk-circle .sk-circle12:before{-webkit-animation-delay:-.1s;animation-delay:-.1s}
+.login{padding:2.2rem 1.6rem}
+.login>h1{width:140px;margin:0 auto}
+.login fieldset{margin-top:2.2rem}
+.login .log-chk{text-align:right}
+.login .log-chk label>span{display:inline-block;margin-top:-.3rem;font-size:1.2rem;vertical-align:top}
+.login .log-chk input[type=checkbox]{vertical-align:top}
+.login .group{margin-top:.2rem}
+.login input[type=text],
+.login input[type=password],
+.login button[type=submit]{width:100%}
+.login input[type=text],
+.login input[type=password]{margin-top:.4rem;padding:.8rem;border:1px solid #c8c8c8;font-size:1.3rem;color:#333;text-indent:.6rem;box-sizing:border-box}
+.login button[type=submit]{margin-top:.8rem;padding:1rem 0 1.2rem;border:0;border-radius:.2rem;background-color:#2c86dc;color:#fff;cursor:pointer}
+</style>
+</head>
+<body>
+<article class="login">
+    <h1><img src="img/logo.png" alt="hiworks"></h1>
+    <form>
+        <fieldset>
+            <legend class="blind">login</legend>
+            <div class="log-chk"><label><input type="checkbox" id="idRemember"> <span>아이디 저장</span></label></div>
+            <div class="group">
+                <input type="text" placeholder="아이디" autofocus id="uid">
+                <input type="password" placeholder="비밀번호" id="upw">
+                <button type="submit">로그인</button>
+            </div>
+        </fieldset>
+    </form>
+</article>
+<div id="dimmed" class="dimmed" style="display:none">
+    <div class="sk-circle">
+        <span class="sk-circle1 sk-child"></span>
+        <span class="sk-circle2 sk-child"></span>
+        <span class="sk-circle3 sk-child"></span>
+        <span class="sk-circle4 sk-child"></span>
+        <span class="sk-circle5 sk-child"></span>
+        <span class="sk-circle6 sk-child"></span>
+        <span class="sk-circle7 sk-child"></span>
+        <span class="sk-circle8 sk-child"></span>
+        <span class="sk-circle9 sk-child"></span>
+        <span class="sk-circle10 sk-child"></span>
+        <span class="sk-circle11 sk-child"></span>
+        <span class="sk-circle12 sk-child"></span>
+    </div>
+</div>
+
+<script>
+'use strict';
+
+// const electron = require('electron');
+// const {ipcRenderer, remote} = electron;
+//
+// class Login {
+//   constructor() {
+//     this.$form = document.querySelector('form');
+//     this.$idRemember = document.querySelector('#idRemember');
+//     this.$uid = document.querySelector('#uid');
+//     this.$upw = document.querySelector('#upw');
+//     this.$dimmed = document.querySelector('#dimmed');
+//
+//     this.init();
+//     this.initEventListener();
+//     this.electronIPC();
+//   }
+//
+//   init() {
+//     if (localStorage.getItem('uid')) {
+//       this.idRemember.checked = true;
+//       this.$uid.value = localStorage.getItem('uid');
+//     }
+//   }
+//
+//   initEventListener() {
+//     this.$idRemember.addEventListener('change', (e) => {
+//       if (!this.$idRemember.checked) { localStorage.removeItem('uid'); }
+//     }, false);
+//
+//     this.$form.addEventListener('submit', (e) => {
+//       e.preventDefault();
+//
+//       if (this.$uid.value.trim().length === 0 || this.$upw.value.trim().length === 0) {
+//         alert('아이디 또는 비밀번호를 입력해주세요.');
+//
+//         return;
+//       }
+//
+//       ipcRenderer.send('login:submit', {
+//         uid: this.$uid.value,
+//         upw: this.$upw.value
+//       });
+//
+//       this.$dimmed.style.display = 'block';
+//     }, false);
+//   }
+//
+//   electronIPC() {
+//     ipcRenderer.on('login:error', () => {
+//       this.$dimmed.style.display = 'none';
+//     });
+//
+//     ipcRenderer.on('login:success', (e, item) => {
+//       if (this.$idRemember.checked) {
+//         localStorage.setItem('uid', item);
+//       }
+//     });
+//   }
+// }
+//
+// new Login();
+
+const electron = require('electron');
+const {ipcRenderer, remote} = electron;
+
+const $form = document.querySelector('form');
+const $idRemember = document.querySelector('#idRemember');
+const $uid = document.querySelector('#uid');
+const $upw = document.querySelector('#upw');
+const $dimmed = document.querySelector('#dimmed');
+
+if (localStorage.getItem('uid')) {
+    idRemember.checked = true;
+    $uid.value = localStorage.getItem('uid');
+}
+
+$idRemember.addEventListener('change', (e) => {
+    if (!$idRemember.checked) { localStorage.removeItem('uid'); }
+}, false);
+
+$form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if ($uid.value.trim().length === 0 || $upw.value.trim().length === 0) {
+        alert('아이디 또는 비밀번호를 입력해주세요.');
+
+        return;
+    }
+
+    $dimmed.style.display = 'block';
+
+    ipcRenderer.send('login:submit', {
+        uid: $uid.value,
+        upw: $upw.value
+    });
+}, false);
+
+ipcRenderer.on('login:error', () => {
+    $dimmed.style.display = 'none';
+});
+
+ipcRenderer.on('login:success', (e, item) => {
+    if ($idRemember.checked) { localStorage.setItem('uid', item); }
+});
+</script>
+</body>
+</html>

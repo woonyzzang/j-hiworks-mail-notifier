@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>About :: JMemo</title>
+<style>
+*{margin:0;padding:0}
+:root{font-size:.625em;}
+body,button,h1,h2,h3,h4,h5,input,select,table,textarea{font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif}
+body{background-color:#282c34;font-size:1.4rem}
+.app-about{margin-top:3rem;color:#fff}
+.app-about>h1{overflow:hidden;clip:rect(0 0 0 0);position:absolute;width:1px;height:1px}
+.app-about>.group{text-align:center}
+.app-about>.group h2{font-size:3.4rem}
+.app-about>.group p{display:inline-block;margin-top:1.6rem;padding:.8rem 6rem;border:1px solid #181a1f;border-radius:.6rem;background-color:#31363f;}
+.app-about>.group strong{margin-right: 1rem;font-family:Tahoma;font-weight:normal;color:#98a0af}
+.app-about>.content{margin-top:2rem;text-align:center}
+.app-about>.content ul{display:inline-block;color:#9da5b4;text-align:left}
+.app-about>.content li{margin-top:.6rem}
+.app-about>.content li:first-child{margin-top:0}
+</style>
+</head>
+<body>
+<article class="app-about">
+    <h1>About</h1>
+    <div class="group">
+        <h2 id="appName">{{name}}</h2>
+        <p><strong id="appVersion">{{version}}</strong> Release</p>
+    </div>
+    <section class="content">
+        <ul>
+            <!-- <li>Developer - woonyzzang</li>
+            <li>Email - seungwoonjjang@gmail.com</li> -->
+            <li>Developer - Joe Seung Woon</li>
+            <li>Email - seungwoon@upleat.com</li>
+        </ul>
+    </section>
+ </article>
+
+<script>
+'use strict';
+
+const electron = require('electron');
+const sharedObj = electron.remote.getGlobal('sharedObject');
+
+document.querySelector('#appName').textContent = `${sharedObj.appName}`;
+document.querySelector('#appVersion').textContent = `v${sharedObj.appVersion}`;
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Hiworks Mail Notifier</title>
+<style>
+*{margin:0;padding:0}
+:root{font-size:.625em;}
+body,button,h1,h2,h3,h4,h5,input,select,table,textarea{font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif}
+body{font-size:1.6rem}
+ul{list-style:none}
+img{max-width:100%;height:auto}
+.notifier{position:relative;padding:1.6rem;border:2px solid #0a6fcd;box-sizing:border-box}
+.notifier .ico_email{display:inline-block;width:4.2rem;margin-top:-.8rem;vertical-align:top}
+.notifier strong{display:inline-block;margin:.6rem 0 0 .2rem;font-size:1.4rem;color:##03488a;vertical-align:top}
+.notifier .info{margin-top:.4rem}
+.notifier .info>li{overflow:hidden;text-overflow:ellipsis;margin-top:.2rem;font-size:1.3rem;white-space:nowrap}
+.notifier .info>li:first-child{margin-top:0}
+.notifier .info>li>em{font-style:normal;font-size:1.2rem;color:#666}
+.notifier .info>li:nth-of-type(1)>span{font-family:tahoma}
+.notifier .info>li:nth-of-type(3)>span{font-family:tahoma}
+</style>
+</head>
+<body>
+<div class="notifier">
+    <p>
+        <!-- [I] 온라인 GIF 커스터마이징: https://ezgif.com/maker -->
+        <i class="ico_email"><img src="img/ico_email.gif" alt="New"></i>
+        <strong>[새 메일이 도착했습니다.]</strong>
+    </p>
+    <ul class="info">
+        <li><em>제목:</em> <span id="mailTitle">{{title}}</span></li>
+        <li><em>보낸사람:</em> <span id="mailName">{{name}}</span></li>
+        <li><em>보낸시간:</em> <span id="mailDate">{{date}}</span></li>
+    </ul>
+</div>
+
+<script>
+'use strict';
+// const electron = require('electron');
+// const {ipcRenderer, remote} = electron;
+//
+//
+// class Notifier {
+//   constructor() {
+//     this.$mailName = document.querySelector('#mailName');
+//     this.$mailTitle = document.querySelector('#mailTitle');
+//     this.$mailDate = document.querySelector('#mailDate');
+//
+//     this.electronRemoteShare();
+//     this.init();
+//   }
+//
+//   electronRemoteShare() {
+//     this.sharedObj = remote.getGlobal('sharedObject');
+//   }
+//
+//   init() {
+//     this.$mailName.textContent = this.sharedObj.mailData.name;
+//     this.$mailTitle.textContent = this.sharedObj.mailData.title;
+//     this.$mailDate.textContent = this.sharedObj.mailData.date;
+//   }
+// }
+//
+// new Notifier();
+
+const electron = require('electron');
+const {ipcRenderer, remote} = electron;
+const sharedObj = remote.getGlobal('sharedObject');
+
+document.querySelector('#mailName').textContent = sharedObj.mailData.name;
+document.querySelector('#mailTitle').textContent = sharedObj.mailData.title;
+document.querySelector('#mailDate').textContent = sharedObj.mailData.date;
+</script>
+</body>
+</html>

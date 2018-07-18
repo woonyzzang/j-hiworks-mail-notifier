@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>System Info :: JMemo</title>
+<style>
+*{margin:0;padding:0}
+::-webkit-scrollbar{width:8px;height:3px;border-left:0}
+::-webkit-scrollbar-thumb{background-color:#1a1e27;border-radius:4px}
+:root,body{height:100%}
+:root{font-size:.625em;}
+body,button,h1,h2,h3,h4,h5,input,select,table,textarea{font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif}
+body{background-color:#282c34;font-size:1.4rem}
+.app-info{position:relative;height:100%;color:#fff}
+.app-info>h1{overflow:hidden;clip:rect(0 0 0 0);position:absolute;width:1px;height:1px}
+.app-info .content{position:absolute;top:1.6rem;right:1.6rem;bottom:1.6rem;left:1.6rem;background-color:#31363f;border:1px solid #181a1f;}
+.app-info textarea{width:100%;height:100%;padding:1rem;background-color:transparent;border:0;font-size:1.2rem;line-height:1.6;color:#fff;resize:none;box-sizing:border-box}
+</style>
+</head>
+<body>
+<article class="app-info">
+    <h1>System Info</h1>
+    <section class="content">
+        <textarea cols="20" rows="30" autofocus readonly></textarea>
+    </section>
+</article>
+
+<script>
+'use strict';
+
+const electron = require('electron');
+const sharedObj = electron.remote.getGlobal('sharedObject');
+
+document.querySelectorAll('textarea')[0].value = sharedObj.systemInfo;
+</script>
+</body>
+</html>

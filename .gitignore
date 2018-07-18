@@ -1,0 +1,16 @@
+/mac/node_modules
+/mac/package-lock.json
+/mac/build
+/mac.min/node_modules
+/mac.min/package-lock.json
+/mac.min/build
+/win/node_modules
+/win/package-lock.json
+/win/build_x32
+/win/build_x64
+/win.min/node_modules
+/win.min/package-lock.json
+/@guide/images
+/@guide/psd
+/.idea
+/j-hiworks-mail-notifier.iml
