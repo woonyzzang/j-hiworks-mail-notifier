@@ -1,34 +1,37 @@
 ## J Hiworks Mail Notifier
-하이웍스 이메일과 연동되어 계정에 메일 등록시 자동으로 알려주는 OS 어플리케이션 입니다.
+> 하이웍스 이메일과 연동되어 계정에 메일 등록시 자동으로 알려주는 OS 어플리케이션 입니다.
 
-### preview
-![J Hiworks Mail Notifier1](@preview/Hiworks-Mail-Notifier-Guide-01.jpg)
-![J Hiworks Mail Notifier2](@preview/Hiworks-Mail-Notifier-Guide-02.jpg)
-![J Hiworks Mail Notifier3](@preview/Hiworks-Mail-Notifier-Guide-03.jpg)
-![J Hiworks Mail Notifier4](@preview/Hiworks-Mail-Notifier-Guide-04.jpg)
-![J Hiworks Mail Notifier5](@preview/Hiworks-Mail-Notifier-Guide-05.jpg)
-![J Hiworks Mail Notifier6](@preview/Hiworks-Mail-Notifier-Guide-06.jpg)
-![J Hiworks Mail Notifier7](@preview/Hiworks-Mail-Notifier-Guide-07.jpg)
-![J Hiworks Mail Notifier8](@preview/Hiworks-Mail-Notifier-Guide-08.jpg)
-![J Hiworks Mail Notifier9](@preview/Hiworks-Mail-Notifier-Guide-09.jpg)
-![J Hiworks Mail Notifier10](@preview/Hiworks-Mail-Notifier-Guide-10.jpg)
-![J Hiworks Mail Notifier11](@preview/Hiworks-Mail-Notifier-Guide-11.jpg)
-![J Hiworks Mail Notifier12](@preview/Hiworks-Mail-Notifier-Guide-12.jpg)
-![J Hiworks Mail Notifier13](@preview/Hiworks-Mail-Notifier-Guide-13.jpg)
-![J Hiworks Mail Notifier14](@preview/Hiworks-Mail-Notifier-Guide-14.jpg)
-![J Hiworks Mail Notifier15](@preview/Hiworks-Mail-Notifier-Guide-15.jpg)
-![J Hiworks Mail Notifier16](@preview/Hiworks-Mail-Notifier-Guide-16.jpg)
-![J Hiworks Mail Notifier17](@preview/Hiworks-Mail-Notifier-Guide-17.jpg)
-![J Hiworks Mail Notifier18](@preview/Hiworks-Mail-Notifier-Guide-18.jpg)
-![J Hiworks Mail Notifier19](@preview/Hiworks-Mail-Notifier-Guide-19.jpg)
-![J Hiworks Mail Notifier20](@preview/Hiworks-Mail-Notifier-Guide-20.jpg)
-![J Hiworks Mail Notifier21](@preview/Hiworks-Mail-Notifier-Guide-21.jpg)
-![J Hiworks Mail Notifier22](@preview/Hiworks-Mail-Notifier-Guide-22.jpg)
-![J Hiworks Mail Notifier23](@preview/Hiworks-Mail-Notifier-Guide-23.jpg)
-![J Hiworks Mail Notifier24](@preview/Hiworks-Mail-Notifier-Guide-24.jpg)
-![J Hiworks Mail Notifier25](@preview/Hiworks-Mail-Notifier-Guide-25.jpg)
-![J Hiworks Mail Notifier26](@preview/Hiworks-Mail-Notifier-Guide-26.jpg)
-![J Hiworks Mail Notifier27](@preview/Hiworks-Mail-Notifier-Guide-27.jpg)
+## preview
+![J Hiworks Mail Notifier1](@preview/J-Hiworks-Mail-Notifier-Preview1.jpg)
+![J Hiworks Mail Notifier2](@preview/J-Hiworks-Mail-Notifier-Preview2.jpg)
+![J Hiworks Mail Notifier3](@preview/J-Hiworks-Mail-Notifier-Preview3.jpg)
+![J Hiworks Mail Notifier4](@preview/J-Hiworks-Mail-Notifier-Preview4.jpg)
+![J Hiworks Mail Notifier5](@preview/J-Hiworks-Mail-Notifier-Preview5.jpg)
+![J Hiworks Mail Notifier6](@preview/J-Hiworks-Mail-Notifier-Preview6.jpg)
+![J Hiworks Mail Notifier7](@preview/J-Hiworks-Mail-Notifier-Preview7.jpg)
+![J Hiworks Mail Notifier8](@preview/J-Hiworks-Mail-Notifier-Preview8.jpg)
+![J Hiworks Mail Notifier9](@preview/J-Hiworks-Mail-Notifier-Preview9.jpg)
+![J Hiworks Mail Notifier10](@preview/J-Hiworks-Mail-Notifier-Preview10.jpg)
+![J Hiworks Mail Notifier11](@preview/J-Hiworks-Mail-Notifier-Preview11.jpg)
+![J Hiworks Mail Notifier12](@preview/J-Hiworks-Mail-Notifier-Preview12.jpg)
+![J Hiworks Mail Notifier13](@preview/J-Hiworks-Mail-Notifier-Preview13.jpg)
+![J Hiworks Mail Notifier14](@preview/J-Hiworks-Mail-Notifier-Preview14.jpg)
+![J Hiworks Mail Notifier15](@preview/J-Hiworks-Mail-Notifier-Preview15.jpg)
+![J Hiworks Mail Notifier16](@preview/J-Hiworks-Mail-Notifier-Preview16.jpg)
+![J Hiworks Mail Notifier17](@preview/J-Hiworks-Mail-Notifier-Preview17.jpg)
+![J Hiworks Mail Notifier18](@preview/J-Hiworks-Mail-Notifier-Preview18.jpg)
+![J Hiworks Mail Notifier19](@preview/J-Hiworks-Mail-Notifier-Preview19.jpg)
+![J Hiworks Mail Notifier20](@preview/J-Hiworks-Mail-Notifier-Preview20.jpg)
+![J Hiworks Mail Notifier21](@preview/J-Hiworks-Mail-Notifier-Preview21.jpg)
+![J Hiworks Mail Notifier22](@preview/J-Hiworks-Mail-Notifier-Preview22.jpg)
+![J Hiworks Mail Notifier23](@preview/J-Hiworks-Mail-Notifier-Preview23.jpg)
+![J Hiworks Mail Notifier24](@preview/J-Hiworks-Mail-Notifier-Preview24.jpg)
+![J Hiworks Mail Notifier25](@preview/J-Hiworks-Mail-Notifier-Preview25.jpg)
+![J Hiworks Mail Notifier26](@preview/J-Hiworks-Mail-Notifier-Preview26.jpg)
+![J Hiworks Mail Notifier27](@preview/J-Hiworks-Mail-Notifier-Preview27.jpg)
+
+## 버전
+v1.0.0
 
 ### 디렉토리 구조
 - mac: 맥 OS 개발계
