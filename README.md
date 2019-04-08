@@ -20,7 +20,7 @@
 ![J Hiworks Mail Notifier16](@preview/J-Hiworks-Mail-Notifier-Preview16.jpg)
 ![J Hiworks Mail Notifier17](@preview/J-Hiworks-Mail-Notifier-Preview17.jpg)
 ![J Hiworks Mail Notifier18](@preview/J-Hiworks-Mail-Notifier-Preview18.jpg)
-![J Hiworks Mail Notifier19](@preview/J-Hiworks-Mail-Notifier-Preview19.jpg)
+![J Hiworks Mail Notifier29](@preview/J-Hiworks-Mail-Notifier-Preview19.jpg)
 ![J Hiworks Mail Notifier20](@preview/J-Hiworks-Mail-Notifier-Preview20.jpg)
 ![J Hiworks Mail Notifier21](@preview/J-Hiworks-Mail-Notifier-Preview21.jpg)
 ![J Hiworks Mail Notifier22](@preview/J-Hiworks-Mail-Notifier-Preview22.jpg)
@@ -28,7 +28,6 @@
 ![J Hiworks Mail Notifier24](@preview/J-Hiworks-Mail-Notifier-Preview24.jpg)
 ![J Hiworks Mail Notifier25](@preview/J-Hiworks-Mail-Notifier-Preview25.jpg)
 ![J Hiworks Mail Notifier26](@preview/J-Hiworks-Mail-Notifier-Preview26.jpg)
-![J Hiworks Mail Notifier27](@preview/J-Hiworks-Mail-Notifier-Preview27.jpg)
 
 ## 버전
 v1.0.0
