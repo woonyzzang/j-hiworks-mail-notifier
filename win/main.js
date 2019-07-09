@@ -217,7 +217,7 @@ ipcMain.on('login:submit', (e, item) => {
         //   console.info('Requesting', requestData.url);
         // });
 
-        await page.open('http://webmail.upleat.com/');
+        await page.open('https://office.hiworks.com/upleat.com/');
         await page.property('content').then(function() {
             let toInjectVars = item;
 
