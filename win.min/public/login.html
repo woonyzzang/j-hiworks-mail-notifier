@@ -66,10 +66,15 @@ img{max-width:100%;height:auto}
     <form>
         <fieldset>
             <legend class="blind">login</legend>
-            <div class="log-chk"><label><input type="checkbox" id="idRemember"> <span>아이디 저장</span></label></div>
+            <div class="log-chk">
+                <label>
+                    <input type="checkbox" id="idRemember">
+                    <span>아이디 저장</span>
+                </label>
+            </div>
             <div class="group">
-                <input type="text" placeholder="아이디" autofocus id="uid">
-                <input type="password" placeholder="비밀번호" id="upw">
+                <label><input type="text" placeholder="아이디" autofocus id="uid"></label>
+                <label><input type="password" placeholder="비밀번호" id="upw"></label>
                 <button type="submit">로그인</button>
             </div>
         </fieldset>
@@ -166,11 +171,11 @@ const $upw = document.querySelector('#upw');
 const $dimmed = document.querySelector('#dimmed');
 
 if (localStorage.getItem('uid')) {
-    idRemember.checked = true;
+    $idRemember.checked = true;
     $uid.value = localStorage.getItem('uid');
 }
 
-$idRemember.addEventListener('change', (e) => {
+$idRemember.addEventListener('change', () => {
     if (!$idRemember.checked) { localStorage.removeItem('uid'); }
 }, false);
 
