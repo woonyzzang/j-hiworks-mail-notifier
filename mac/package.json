@@ -80,7 +80,7 @@
     },
     "devDependencies": {
         "7zip-bin-mac": "^1.0.1",
-        "electron": "^1.7.12",
+        "electron": "^9.1.0",
         "electron-builder": "^19.56.0"
     }
 }
